@@ -1,0 +1,20 @@
+[project]
+name = "textoaudio"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abachavez", email = "abachavez@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "transformers==4.36.2",
+    "tts>=0.22.0",
+]
+
+[project.scripts]
+textoaudio = "textoaudio:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
